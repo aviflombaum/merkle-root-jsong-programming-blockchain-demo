@@ -47,8 +47,6 @@ e8270fb475763bc8d855cfe45ed98060988c1bdcad2ffc8364f783c98999a208
 
 
 ```python
-# Exercise 4.1
-
 from helper import double_sha256, merkle_parent_level
 hex_hashes = [
     '42f6f52f17620653dcc909e58bb352e0bd4bd1381e2955d19c00959a22122b2e',
@@ -75,10 +73,10 @@ hex_hashes = [
 
 
 ```python
-def merkle_root(hash_list):
+def merkle_root(hashes):
     '''Takes a list of binary hashes and returns the merkle root
     '''
-    # current level starts as hash_list
+    # current level starts as hashes
     # loop until there's exactly 1 element
         # current level becomes the merkle parent level
     # return the 1st item of current_level
